@@ -53,7 +53,7 @@ There's few built-in commands:
  * `achievements` - print achievements
  * `isof` - prints current score and HP
 
-# Uninstall
+## Uninstall
 
 Same as installation, except you remove that stuff instead of adding it. 
  
