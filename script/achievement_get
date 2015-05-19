@@ -1,0 +1,70 @@
+#!/bin/bash
+#                                           .:oydNMMMMMMMMMMMMMMMMMMMMMMMMNmyo/.
+#                                      `-+hNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNho:`
+#                                   .+yNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNh+-
+#                                .+dNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo-
+#                              :hNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNd/`
+#                           `+mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo.
+#                         `+mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNs.
+#                        /mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo`
+#                      -hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm/
+#                      /o+oooooossyyhddmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNy`
+#                                    ```.-:+sydmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMdNMMMMMMMMMMMMMMMMMMMMd-
+#                                             `.-/sdNMMMMMMMMMMMMMMMMMMMMMNmyyNM/.omMMMMMMMMMMMMMMMMMMMN:
+#                                                  `.:sdNMMMMMMMMMMhhhys+:.`  -/-  .+dMMMMMMMMMMMMMMMMMMN/
+#                .y/                                   `-+hNMMMMMmo                  `:ymNNMMMMMMMMMMMMMMN/
+#               `dMMh-                                     -odNMd.                      `.-mMMMMMMMMMMMMMMN-
+#               yMMMMN+                                      `:y:                       `.`-sdNMMMMMMMMMMMMm`
+#              :MMMMMMMo                                                                `sh.  /MMMMMMMMMMMMMs
+#             `mMMMMMMMM/                                                                `--   +NMMMMMMMMMMMN.
+#             /MMMMMMMMMm                                                 `+o-                  :hNMMMMMMMMMMy
+#             hMMMMMMMMMN                                                .mMMd---.`               :ymMMMMMMMMN`
+#            `MMMMMMMMMMmyhhhs/`                                         /MMMMMMMNh/                `/hNMMMMMM:
+#            :MMMMMMMMMMMMMMMMMm+                                        `hMMMMMMMMMy.   :o/`  ``      :NMMMMMs
+#            +MMMMMMMMMMMMMMMMMMMs                                         /+sMMMMMMMm-  +mMm/`sdyyssh.-NMMMMMh
+#            oMMMMMMMMMMMMMMMMMMMM:                                           oNMMMMMMN- `yMMMd+yNMMMMhNMMMMMMh
+#            oMMMMMMMMMMMMMMMMMMMMy                                            .sNMMMMMm` `+NMMMNmMMMMMMMMMMMMh
+#            +MMMMMMMMMMMMMMMMMMMMo                                              `/yNMMMy`  sMMMMMMMMMMMMMMMMMy
+#            -MMMMMMMMMMMMMMMMMMMN.                                                 `+dMMms+dMMMMMMMMMMMMMMMMM+
+#            `NMMMMMMMMMMMMMMMMMMo+yhddhy.                                             :mMMMMMMMMMMMMMMMMMMMMM-
+#             yMMMMMMMMMMMMMMMMMMMMMMMMMMy                                              `mMMMMMMMMMMMMMMMMMMMm
+#             -MMMMMMMMMMMMMMMMMMMMMMMMMMd                                               /MMMMMMMMMMMMMMMMMMM+
+#              hMMMMMMMMMMMMMMMMMMMMMMMMMy                                               `mMMMMMMMMMMMMMMMMMm`
+#              .NMMMMMMMMMMMMMMMMMMMMMMMMyyy-                                             `yMMMMMMMMMMMMMMMM:
+#               /MMMMMMMMMMMMMMMMMMMMMMMMMMMh                                             +yMMMMMMMMMMMMMMMs
+#                sMMMMMMMMMMMMMMMMMMMMMMMMMMm                                             .mMMMMMMMMMMMMMMd`
+#                 yMMMMMMMMMMMMMMMMMMMMMMMMMd+yo`                                          sMMMMMMMMMMMMMd`
+#                 `yMMMMMMMMMMMMMMMMMMMMMMMMMMMd`                                          mMMMMMMMMMMMMd`
+#                   oMMMMMMMMMMMMMMMMMMMMMMNh+-`                                          /MMMMMMMMMMMMy`
+#                    /NMMMMMMMMMMMMMMMMMNh/`                                          .oyyhMMMMMMMMMMNo
+#                     .hMMMMMMMMMMMMMMNy-                                          ./yNMMMMMMMMMMMMMd-
+#                      `/mMMMMMMMMMMMh-                                           :NMMMMMMMMMMMMMMNo`
+#                        .oNMMMMMMMN+`                                       `:oo+dMMMMMMMMMMMMMNy.
+#                          .smMMMMd-                                      ./ymMMMMMMMMMMMMMMMMNy-
+#                            .odMy`                                       -mMMMMMMMMMMMMMMMMms-
+#                              `-`                             `.:+hh:     -mMMMMMMMMMMMMNh/.
+#                                                      ``.-:+shdNMMMMNs.    .hMMMMMMMMmh+-
+#                                                     +yhdmmmmmmmmmmmmmh:    `+osydds:.
+#                                                     `.................`
+#
+#
+#                                      D R A G O N H A C K          L J U B L J A N A
+#
+#                                                       2   0   1   5
+# Author: recyclerr
+#
+# Except from 'sed' thingy, which was written by yours truly.
+#
+# Not a part of 'increase_ach' script as it was mostly developed simultaneously on a different computer.
+
+assetdir=~/.config/punishell/
+
+name="$(echo $1 | sed s/_/\ /g)"
+comm="$(echo $2 | sed s/_/\ /g)"
+
+printf "Achievement unlocked: $name\n$comm\n"
+
+notify-send -i "$assetdir/ico/$3" "Achievement Unlocked: $name" "$comm"
+if [ "$4" != "none" ] && [ "$4" != "none.wav" ] ; then  
+  aplay -q "$assetdir/sound/$4" &
+fi

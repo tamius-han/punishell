@@ -1,0 +1,143 @@
+#!/bin/bash
+#
+#
+#                                                 `-:/ossyhhhdddhhyyso+:-` 
+#                                           .:oydNMMMMMMMMMMMMMMMMMMMMMMMMNmyo/.
+#                                      `-+hNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNho:`
+#                                   .+yNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNh+-
+#                                .+dNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo-
+#                              :hNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNd/`
+#                           `+mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo.
+#                         `+mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNs.
+#                        /mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo`
+#                      -hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm/
+#                      /o+oooooossyyhddmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNy`
+#                                    ```.-:+sydmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMdNMMMMMMMMMMMMMMMMMMMMd-
+#                                             `.-/sdNMMMMMMMMMMMMMMMMMMMMMNmyyNM/.omMMMMMMMMMMMMMMMMMMMN:
+#                                                  `.:sdNMMMMMMMMMMhhhys+:.`  -/-  .+dMMMMMMMMMMMMMMMMMMN/
+#                .y/                                   `-+hNMMMMMmo                  `:ymNNMMMMMMMMMMMMMMN/
+#               `dMMh-                                     -odNMd.                      `.-mMMMMMMMMMMMMMMN-
+#               yMMMMN+                                      `:y:                       `.`-sdNMMMMMMMMMMMMm`
+#              :MMMMMMMo                                                                `sh.  /MMMMMMMMMMMMMs
+#             `mMMMMMMMM/                                                                `--   +NMMMMMMMMMMMN.
+#             /MMMMMMMMMm                                                 `+o-                  :hNMMMMMMMMMMy
+#             hMMMMMMMMMN                                                .mMMd---.`               :ymMMMMMMMMN`
+#            `MMMMMMMMMMmyhhhs/`                                         /MMMMMMMNh/                `/hNMMMMMM:
+#            :MMMMMMMMMMMMMMMMMm+                                        `hMMMMMMMMMy.   :o/`  ``      :NMMMMMs
+#            +MMMMMMMMMMMMMMMMMMMs                                         /+sMMMMMMMm-  +mMm/`sdyyssh.-NMMMMMh
+#            oMMMMMMMMMMMMMMMMMMMM:                                           oNMMMMMMN- `yMMMd+yNMMMMhNMMMMMMh
+#            oMMMMMMMMMMMMMMMMMMMMy                                            .sNMMMMMm` `+NMMMNmMMMMMMMMMMMMh
+#            +MMMMMMMMMMMMMMMMMMMMo                                              `/yNMMMy`  sMMMMMMMMMMMMMMMMMy
+#            -MMMMMMMMMMMMMMMMMMMN.                                                 `+dMMms+dMMMMMMMMMMMMMMMMM+
+#            `NMMMMMMMMMMMMMMMMMMo+yhddhy.                                             :mMMMMMMMMMMMMMMMMMMMMM-
+#             yMMMMMMMMMMMMMMMMMMMMMMMMMMy                                              `mMMMMMMMMMMMMMMMMMMMm
+#             -MMMMMMMMMMMMMMMMMMMMMMMMMMd                                               /MMMMMMMMMMMMMMMMMMM+
+#              hMMMMMMMMMMMMMMMMMMMMMMMMMy                                               `mMMMMMMMMMMMMMMMMMm`
+#              .NMMMMMMMMMMMMMMMMMMMMMMMMyyy-                                             `yMMMMMMMMMMMMMMMM:
+#               /MMMMMMMMMMMMMMMMMMMMMMMMMMMh                                             +yMMMMMMMMMMMMMMMs
+#                sMMMMMMMMMMMMMMMMMMMMMMMMMMm                                             .mMMMMMMMMMMMMMMd`
+#                 yMMMMMMMMMMMMMMMMMMMMMMMMMd+yo`                                          sMMMMMMMMMMMMMd`
+#                 `yMMMMMMMMMMMMMMMMMMMMMMMMMMMd`                                          mMMMMMMMMMMMMd`
+#                   oMMMMMMMMMMMMMMMMMMMMMMNh+-`                                          /MMMMMMMMMMMMy`
+#                    /NMMMMMMMMMMMMMMMMMNh/`                                          .oyyhMMMMMMMMMMNo
+#                     .hMMMMMMMMMMMMMMNy-                                          ./yNMMMMMMMMMMMMMd-
+#                      `/mMMMMMMMMMMMh-                                           :NMMMMMMMMMMMMMMNo`
+#                        .oNMMMMMMMN+`                                       `:oo+dMMMMMMMMMMMMMNy.
+#                          .smMMMMd-                                      ./ymMMMMMMMMMMMMMMMMNy-
+#                            .odMy`                                       -mMMMMMMMMMMMMMMMMms-
+#                              `-`                             `.:+hh:     -mMMMMMMMMMMMMNh/.
+#                                                      ``.-:+shdNMMMMNs.    .hMMMMMMMMmh+-
+#                                                     +yhdmmmmmmmmmmmmmh:    `+osydds:.
+#                                                     `.................`
+#
+#
+#                                      D R A G O N H A C K          L J U B L J A N A
+#
+#                                                       2   0   1   5
+#  
+# 
+# Author: Tamius Han (xternal7)
+
+source colors
+
+demo=$#
+
+increase_ach rekt
+
+ur_xp=$(sgloader get xp)
+mx_xp=$(sgloader record | awk '{print $1}')
+
+len_u=${#ur_xp}
+len_m=${#mx_xp}
+
+placesdiff=$(( $len_m - $len_u))
+
+recholder=$(sgloader record | awk '{print $2}')
+
+printf "$BYellow===========================================$Color_Off\n"
+printf "$Black$On_Red"
+printf         "          G A E M   O V E R   M 8          $Color_Off\n"
+printf         "   Your computer is now going to restart.  \n"
+printf         "Your score (XP): $Green"
+
+# Žirija me je malo okregala zaradi 'gaem' stvarce, zato razložimo na 
+# hitro. 'Gaem' in 'm8' sta tukaj kot nagib fedore 4chanovemu /v/ in
+# MLG parodijam (glej povezave spodaj za primere)
+# 
+# Če smo pošteni sem na predstavitvi bolj kot ne pozabil, kako se govori
+# angleško. Sicer bi podobne napake verjetno delal tudi v slovenščini,
+# kajti grabila me je trema, pokonci sem bil pa že skoraj 30 ur.
+#
+# ...................................................................
+#
+# The judges did poke some fun at the improper spelling of the word 'game',
+# so I think I'll explain this one. 'Gaem' and 'm8' are there as a virtual
+# Fedora tip to 4chan's /v/ and MLG videos/parodies (See below).
+# 
+# To be honest, after being up for nearly 30 straight hours and seriously
+# lacking confidence, I DID completely forget how2english during the 
+# presentation. I'd probably forget how2nativelanguage on that stage too,
+# though.
+# 
+# Primeri | Dankest MLG examples:
+#  - https://www.youtube.com/watch?v=cydSuVfvus8 ( MLG programming )
+#  - https://www.youtube.com/watch?v=Ss_uhWef_y4 ( Legolas rages and quickscopes everybody)
+#  - https://www.youtube.com/watch?v=CxfROvfGDq0 ( GoT: Children of the dank )
+#  - https://www.youtube.com/watch?v=02OpNT2N5TA ( CS:GO in a nutshell )
+#
+# reddit.com/r/montageparodies
+
+if [[ $ur_xp -le $mx_xp ]] ; then 
+  for (( i=0; i < $placesdiff; i++)); do
+    printf " "
+  done
+fi
+printf "$ur_xp$Color_Off\n"
+
+if [[ $ur_xp -gt $mx_xp ]] && [[ $demo -lt 2 ]] ; then
+  if [[ $demo -eq 0 ]] ; then
+    sgloader nr                       #new record
+  fi
+  printf "$On_Blue$BWhite"
+  printf       "  CONGRATS! You beat the old high score!   $Color_Off\n"
+else
+  printf       "High score (XP): $BGreen$mx_xp\n"
+  printf       "By:$BCyan $recholder$Color_Off "
+  if [ "$recholder" == "$(whoami)" ] ; then
+    printf "(you)"
+  fi
+  printf "\n"
+fi
+printf "$BYellow===========================================$Color_Off\n"
+if [[ $demo -eq 0 ]] ; then
+  sgloader reset
+fi
+
+# Reset all achievements that warrant resetting
+reset_ach Stayin_Alive Blaze_It! Really_high_score 
+
+sleep 5
+
+if [ $demo -eq 0 ] ; then
+  sudo poweroff -f
+fi

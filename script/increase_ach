@@ -1,0 +1,111 @@
+#!/bin/bash
+#                                           .:oydNMMMMMMMMMMMMMMMMMMMMMMMMNmyo/.
+#                                      `-+hNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNho:`
+#                                   .+yNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNh+-
+#                                .+dNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo-
+#                              :hNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNd/`
+#                           `+mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo.
+#                         `+mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNs.
+#                        /mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo`
+#                      -hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm/
+#                      /o+oooooossyyhddmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNy`
+#                                    ```.-:+sydmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMdNMMMMMMMMMMMMMMMMMMMMd-
+#                                             `.-/sdNMMMMMMMMMMMMMMMMMMMMMNmyyNM/.omMMMMMMMMMMMMMMMMMMMN:
+#                                                  `.:sdNMMMMMMMMMMhhhys+:.`  -/-  .+dMMMMMMMMMMMMMMMMMMN/
+#                .y/                                   `-+hNMMMMMmo                  `:ymNNMMMMMMMMMMMMMMN/
+#               `dMMh-                                     -odNMd.                      `.-mMMMMMMMMMMMMMMN-
+#               yMMMMN+                                      `:y:                       `.`-sdNMMMMMMMMMMMMm`
+#              :MMMMMMMo                                                                `sh.  /MMMMMMMMMMMMMs
+#             `mMMMMMMMM/                                                                `--   +NMMMMMMMMMMMN.
+#             /MMMMMMMMMm                                                 `+o-                  :hNMMMMMMMMMMy
+#             hMMMMMMMMMN                                                .mMMd---.`               :ymMMMMMMMMN`
+#            `MMMMMMMMMMmyhhhs/`                                         /MMMMMMMNh/                `/hNMMMMMM:
+#            :MMMMMMMMMMMMMMMMMm+                                        `hMMMMMMMMMy.   :o/`  ``      :NMMMMMs
+#            +MMMMMMMMMMMMMMMMMMMs                                         /+sMMMMMMMm-  +mMm/`sdyyssh.-NMMMMMh
+#            oMMMMMMMMMMMMMMMMMMMM:                                           oNMMMMMMN- `yMMMd+yNMMMMhNMMMMMMh
+#            oMMMMMMMMMMMMMMMMMMMMy                                            .sNMMMMMm` `+NMMMNmMMMMMMMMMMMMh
+#            +MMMMMMMMMMMMMMMMMMMMo                                              `/yNMMMy`  sMMMMMMMMMMMMMMMMMy
+#            -MMMMMMMMMMMMMMMMMMMN.                                                 `+dMMms+dMMMMMMMMMMMMMMMMM+
+#            `NMMMMMMMMMMMMMMMMMMo+yhddhy.                                             :mMMMMMMMMMMMMMMMMMMMMM-
+#             yMMMMMMMMMMMMMMMMMMMMMMMMMMy                                              `mMMMMMMMMMMMMMMMMMMMm
+#             -MMMMMMMMMMMMMMMMMMMMMMMMMMd                                               /MMMMMMMMMMMMMMMMMMM+
+#              hMMMMMMMMMMMMMMMMMMMMMMMMMy                                               `mMMMMMMMMMMMMMMMMMm`
+#              .NMMMMMMMMMMMMMMMMMMMMMMMMyyy-                                             `yMMMMMMMMMMMMMMMM:
+#               /MMMMMMMMMMMMMMMMMMMMMMMMMMMh                                             +yMMMMMMMMMMMMMMMs
+#                sMMMMMMMMMMMMMMMMMMMMMMMMMMm                                             .mMMMMMMMMMMMMMMd`
+#                 yMMMMMMMMMMMMMMMMMMMMMMMMMd+yo`                                          sMMMMMMMMMMMMMd`
+#                 `yMMMMMMMMMMMMMMMMMMMMMMMMMMMd`                                          mMMMMMMMMMMMMd`
+#                   oMMMMMMMMMMMMMMMMMMMMMMNh+-`                                          /MMMMMMMMMMMMy`
+#                    /NMMMMMMMMMMMMMMMMMNh/`                                          .oyyhMMMMMMMMMMNo
+#                     .hMMMMMMMMMMMMMMNy-                                          ./yNMMMMMMMMMMMMMd-
+#                      `/mMMMMMMMMMMMh-                                           :NMMMMMMMMMMMMMMNo`
+#                        .oNMMMMMMMN+`                                       `:oo+dMMMMMMMMMMMMMNy.
+#                          .smMMMMd-                                      ./ymMMMMMMMMMMMMMMMMNy-
+#                            .odMy`                                       -mMMMMMMMMMMMMMMMMms-
+#                              `-`                             `.:+hh:     -mMMMMMMMMMMMMNh/.
+#                                                      ``.-:+shdNMMMMNs.    .hMMMMMMMMmh+-
+#                                                     +yhdmmmmmmmmmmmmmh:    `+osydds:.
+#                                                     `.................`
+#
+#
+#                                      D R A G O N H A C K         L J U B L J A N A
+#
+#                                                    2   0   1   5
+# Author: Tamius Han (xternal7)
+#
+#
+#
+# Eden in edini argument je ime dosežka. Drugi argument ni obvezen — vsebuje število,
+# za katero se poveča napredek.
+#
+# One and only argument of this script is the name of achievement. Second argument
+# is optional — it contains a number by which the achievement progress advances.
+#
+#
+#
+#
+# Format datoteke: achievements
+# Formatting in the file: achievements
+#
+#      awk :   1          2              3         4         5         6           7         8               9
+#   argnum :   0          1              2         3         4         5           6         7               8
+#      ime :   #      ime_dosezka     dosezen   napredek   cilj      slika       zvok      opis       opis za/desc for
+#     name :   #      achievement     achieved  progress  target      icon       sound  description  print-achievements
+#            ==========================================================================================================
+# tip/type :  int       string          1/0       int       int      string     string    string          string
+#
+#
+#
+#    string ne sme vsebovati presledkov | string shouldn't contain whitespaces
+#      namesto njih uporabite podčrtaj  |       use underscore instead
+#
+#
+# POT DO DATOTEKE / PATH TO achievements:
+afile=~/.config/punishell/achievements
+
+# Določimo povečevalec / set increment
+increment=1;
+
+if [ $# -eq 2 ] ; then  # Če sta dva argumenta, potem je drugi argument povečevalec
+                        # If there are two arguments, then the second one is the increment
+  increment=$2
+fi
+
+ach_grep="$(cat "$afile" | grep -i "$1")"
+
+IFS=' ' read -a ach_linearr <<< "$ach_grep"
+
+linenr=${ach_linearr[0]}
+
+if [[ ${ach_linearr[2]} -eq 0 ]] ; then
+  ach_linearr[3]=$((${ach_linearr[3]} + $increment))
+  if [[ ${ach_linearr[3]} -ge ${ach_linearr[4]} ]] ; then
+    ach_linearr[2]="1"
+    achievement_get "${ach_linearr[1]}" "${ach_linearr[7]}" "${ach_linearr[5]}" "${ach_linearr[6]}"    
+  fi
+  
+  rep="${ach_linearr[@]}"
+  grep -v "^$linenr" $afile > /tmp/afile
+  mv /tmp/afile $afile
+  echo $rep >> $afile
+fi

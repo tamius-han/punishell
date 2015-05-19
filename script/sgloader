@@ -1,0 +1,200 @@
+#!/bin/bash
+#
+#
+#                                                 `-:/ossyhhhdddhhyyso+:-` 
+#                                           .:oydNMMMMMMMMMMMMMMMMMMMMMMMMNmyo/.
+#                                      `-+hNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNho:`
+#                                   .+yNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNh+-
+#                                .+dNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo-
+#                              :hNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNd/`
+#                           `+mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo.
+#                         `+mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNs.
+#                        /mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo`
+#                      -hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm/
+#                      /o+oooooossyyhddmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNy`
+#                                    ```.-:+sydmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMdNMMMMMMMMMMMMMMMMMMMMd-
+#                                             `.-/sdNMMMMMMMMMMMMMMMMMMMMMNmyyNM/.omMMMMMMMMMMMMMMMMMMMN:
+#                                                  `.:sdNMMMMMMMMMMhhhys+:.`  -/-  .+dMMMMMMMMMMMMMMMMMMN/
+#                .y/                                   `-+hNMMMMMmo                  `:ymNNMMMMMMMMMMMMMMN/
+#               `dMMh-                                     -odNMd.                      `.-mMMMMMMMMMMMMMMN-
+#               yMMMMN+                                      `:y:                       `.`-sdNMMMMMMMMMMMMm`
+#              :MMMMMMMo                                                                `sh.  /MMMMMMMMMMMMMs
+#             `mMMMMMMMM/                                                                `--   +NMMMMMMMMMMMN.
+#             /MMMMMMMMMm                                                 `+o-                  :hNMMMMMMMMMMy
+#             hMMMMMMMMMN                                                .mMMd---.`               :ymMMMMMMMMN`
+#            `MMMMMMMMMMmyhhhs/`                                         /MMMMMMMNh/                `/hNMMMMMM:
+#            :MMMMMMMMMMMMMMMMMm+                                        `hMMMMMMMMMy.   :o/`  ``      :NMMMMMs
+#            +MMMMMMMMMMMMMMMMMMMs                                         /+sMMMMMMMm-  +mMm/`sdyyssh.-NMMMMMh
+#            oMMMMMMMMMMMMMMMMMMMM:                                           oNMMMMMMN- `yMMMd+yNMMMMhNMMMMMMh
+#            oMMMMMMMMMMMMMMMMMMMMy                                            .sNMMMMMm` `+NMMMNmMMMMMMMMMMMMh
+#            +MMMMMMMMMMMMMMMMMMMMo                                              `/yNMMMy`  sMMMMMMMMMMMMMMMMMy
+#            -MMMMMMMMMMMMMMMMMMMN.                                                 `+dMMms+dMMMMMMMMMMMMMMMMM+
+#            `NMMMMMMMMMMMMMMMMMMo+yhddhy.                                             :mMMMMMMMMMMMMMMMMMMMMM-
+#             yMMMMMMMMMMMMMMMMMMMMMMMMMMy                                              `mMMMMMMMMMMMMMMMMMMMm
+#             -MMMMMMMMMMMMMMMMMMMMMMMMMMd                                               /MMMMMMMMMMMMMMMMMMM+
+#              hMMMMMMMMMMMMMMMMMMMMMMMMMy                                               `mMMMMMMMMMMMMMMMMMm`
+#              .NMMMMMMMMMMMMMMMMMMMMMMMMyyy-                                             `yMMMMMMMMMMMMMMMM:
+#               /MMMMMMMMMMMMMMMMMMMMMMMMMMMh                                             +yMMMMMMMMMMMMMMMs
+#                sMMMMMMMMMMMMMMMMMMMMMMMMMMm                                             .mMMMMMMMMMMMMMMd`
+#                 yMMMMMMMMMMMMMMMMMMMMMMMMMd+yo`                                          sMMMMMMMMMMMMMd`
+#                 `yMMMMMMMMMMMMMMMMMMMMMMMMMMMd`                                          mMMMMMMMMMMMMd`
+#                   oMMMMMMMMMMMMMMMMMMMMMMNh+-`                                          /MMMMMMMMMMMMy`
+#                    /NMMMMMMMMMMMMMMMMMNh/`                                          .oyyhMMMMMMMMMMNo
+#                     .hMMMMMMMMMMMMMMNy-                                          ./yNMMMMMMMMMMMMMd-
+#                      `/mMMMMMMMMMMMh-                                           :NMMMMMMMMMMMMMMNo`
+#                        .oNMMMMMMMN+`                                       `:oo+dMMMMMMMMMMMMMNy.
+#                          .smMMMMd-                                      ./ymMMMMMMMMMMMMMMMMNy-
+#                            .odMy`                                       -mMMMMMMMMMMMMMMMMms-
+#                              `-`                             `.:+hh:     -mMMMMMMMMMMMMNh/.
+#                                                      ``.-:+shdNMMMMNs.    .hMMMMMMMMmh+-
+#                                                     +yhdmmmmmmmmmmmmmh:    `+osydds:.
+#                                                     `.................`
+#
+#
+#                                      D R A G O N H A C K          L J U B L J A N A
+#
+#                                                       2   0   1   5
+# 
+# Author: Tamius Han (xternal7)
+# 
+# 
+# 
+# loader: modul za nalaganje shranjenih podatkov (HP in XP)
+# 
+# KLICI / CALLS
+#
+#    dobi vrednost/get value:       loader get {xp|hp}
+# nastavi vrednost/set value:       loader set {xp|hp} VALUE
+# 
+# 
+# 
+# 
+# datoteka/file: stat
+#
+#   argnum:      0      1    2            3
+#      ime:     HP     XP   lvl   cilj za nov level
+#     name:     HP     XP   lvl  target for new level
+#          ==========================================
+# tip/type:     int    int  int          int
+# 
+# 
+# # Format datoteke: achievements
+# Formatting in the file: achievements
+#
+#      awk :   1          2              3         4         5         6           7         8               9
+#   argnum :   0          1              2         3         4         5           6         7               8
+#      ime :   #      ime_dosezka     dosezen   napredek   cilj      slika       zvok      opis       opis za/desc for
+#     name :   #      achievement     achieved  progress  target      icon       sound  description  print-achievements
+#            ==========================================================================================================
+# tip/type :  int       string          1/0       int       int      string     string    string          string
+
+source colors
+
+function printline {
+  # Izpiše črto. $1 naj bo en znak, s katerim bo predstavljena črta
+  # Prints a line. $1 is one character, which will make up a line.
+  # 
+  for i in $(seq 1 $(tput cols)) ; do
+    printf "$1"
+  done
+  echo ""
+}
+
+function print-achievements {
+  printf "$BYellow"
+  printline "="
+  printf "Achievements achieved so far:\n$Color_Off"
+  
+  
+  cat ~/.config/punishell/achievements | awk '{if ($3 == "1" ) print $0;}' | while read line ; do
+    printf "$Blue"
+    printline "."
+    printf "$BBlue$(echo $line | awk '{print $2}'|sed s/_/\ /g)$Color_Off: $(echo $line | awk '{print $9}'|sed s/_/\ /g)\n"
+  done
+  printf "$BYellow"
+  printline "."
+  printf "\n$BYellow"
+  printf "Achievements not yet achieved:\n"
+  
+  cat ~/.config/punishell/achievements | awk '{if ($3 == "0" ) print $0;}'  | sort -k4 -n | while read line ; do
+    printf "$Blue"
+    printline "."
+    printf "$BBlue$(echo $line | awk '{print $2}'|sed s/_/\ /g)$Color_Off: $(echo $line | awk '{print $9}'|sed s/_/\ /g)\n"
+    printf "Progress: $(echo $line | awk '{print $4}')/$(echo $line | awk '{print $5}')\n"
+  done
+  printf "$BYellow"
+  printline "="
+  
+  exit 0
+}
+
+
+
+
+stat=~/.config/punishell/stat
+max=~/.config/punishell/hiscore
+
+
+
+IFS=' ' read hp xp lvl nlvl <<< $(cat "$stat")
+
+if [ $# -lt 2 ] ; then
+  if [ "$1" == "record" ] ; then
+    echo "$(cat $max)"
+  elif [ "$1" == "print-achievements" ] ; then
+    print-achievements
+  elif [ "$1" == "nr" ] ; then
+    echo "$xp $(whoami) $lvl" > $max
+  elif [ "$1" == "reset" ] ; then
+    hp=100 
+    xp=0
+    lvl=0
+    nlvl=1000
+  elif [ "$1" == "reset-hi" ] ; then
+    echo "420 snoop-dogg 1" > $max
+  fi
+else 
+  if [ "$1" == "get" ] ; then
+    if [ "$2" == "hp" ] ; then
+      echo $hp
+    elif [ "$2" == "xp" ] ; then
+      echo $xp
+    else
+      exit -2
+    fi
+  elif [ "$1" == "set" ] ; then
+    if [ "$2" == "hp" ] ; then
+      hp="$3"
+    elif [ "$2" == "xp" ] ; then
+      xp="$3"
+    else
+      exit -3
+    fi
+  elif [ "$1" == "mod" ] ; then
+    if [ "$2" == "hp" ] ; then
+      hp=$(($hp - $3))
+      if [[ $hp -le 0 ]] ; then
+        gameover
+        exit 1
+      fi
+    elif [ "$2" == "xp" ] ; then
+      xp=$(($xp + $3))
+      if [[ $xp -ge $nlvl ]] ; then
+        nlvl=$((1000 * $lvl * $lvl / 2 ));
+        lvl=$(($lvl + 1))
+        xp=$(( $hp + 50 ))
+        increase_ach A_Whole_New_Level
+        
+        printf "$BYellow"
+        printline "~"
+        printf "$Yellow"
+        printf "You gained a level.$Color_Off "
+        printf "You get $Cyan+50$Color_Off hp as a reward. You now have $Red$(sgloader get hp)$Color_Off hp.\n"        
+      fi
+    fi
+  else
+    exit -4
+  fi
+fi
+
+echo "$hp $xp $lvl $nlvl" > "$stat"

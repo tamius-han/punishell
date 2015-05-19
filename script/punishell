@@ -1,0 +1,279 @@
+#!/bin/bash
+#
+#
+#                                                 `-:/ossyhhhdddhhyyso+:-` 
+#                                           .:oydNMMMMMMMMMMMMMMMMMMMMMMMMNmyo/.
+#                                      `-+hNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNho:`
+#                                   .+yNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNh+-
+#                                .+dNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo-
+#                              :hNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNd/`
+#                           `+mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo.
+#                         `+mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNs.
+#                        /mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo`
+#                      -hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm/
+#                      /o+oooooossyyhddmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNy`
+#                                    ```.-:+sydmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMdNMMMMMMMMMMMMMMMMMMMMd-
+#                                             `.-/sdNMMMMMMMMMMMMMMMMMMMMMNmyyNM/.omMMMMMMMMMMMMMMMMMMMN:
+#                                                  `.:sdNMMMMMMMMMMhhhys+:.`  -/-  .+dMMMMMMMMMMMMMMMMMMN/
+#                .y/                                   `-+hNMMMMMmo                  `:ymNNMMMMMMMMMMMMMMN/
+#               `dMMh-                                     -odNMd.                      `.-mMMMMMMMMMMMMMMN-
+#               yMMMMN+                                      `:y:                       `.`-sdNMMMMMMMMMMMMm`
+#              :MMMMMMMo                                                                `sh.  /MMMMMMMMMMMMMs
+#             `mMMMMMMMM/                                                                `--   +NMMMMMMMMMMMN.
+#             /MMMMMMMMMm                                                 `+o-                  :hNMMMMMMMMMMy
+#             hMMMMMMMMMN                                                .mMMd---.`               :ymMMMMMMMMN`
+#            `MMMMMMMMMMmyhhhs/`                                         /MMMMMMMNh/                `/hNMMMMMM:
+#            :MMMMMMMMMMMMMMMMMm+                                        `hMMMMMMMMMy.   :o/`  ``      :NMMMMMs
+#            +MMMMMMMMMMMMMMMMMMMs                                         /+sMMMMMMMm-  +mMm/`sdyyssh.-NMMMMMh
+#            oMMMMMMMMMMMMMMMMMMMM:                                           oNMMMMMMN- `yMMMd+yNMMMMhNMMMMMMh
+#            oMMMMMMMMMMMMMMMMMMMMy                                            .sNMMMMMm` `+NMMMNmMMMMMMMMMMMMh
+#            +MMMMMMMMMMMMMMMMMMMMo                                              `/yNMMMy`  sMMMMMMMMMMMMMMMMMy
+#            -MMMMMMMMMMMMMMMMMMMN.                                                 `+dMMms+dMMMMMMMMMMMMMMMMM+
+#            `NMMMMMMMMMMMMMMMMMMo+yhddhy.                                             :mMMMMMMMMMMMMMMMMMMMMM-
+#             yMMMMMMMMMMMMMMMMMMMMMMMMMMy                                              `mMMMMMMMMMMMMMMMMMMMm
+#             -MMMMMMMMMMMMMMMMMMMMMMMMMMd                                               /MMMMMMMMMMMMMMMMMMM+
+#              hMMMMMMMMMMMMMMMMMMMMMMMMMy                                               `mMMMMMMMMMMMMMMMMMm`
+#              .NMMMMMMMMMMMMMMMMMMMMMMMMyyy-                                             `yMMMMMMMMMMMMMMMM:
+#               /MMMMMMMMMMMMMMMMMMMMMMMMMMMh                                             +yMMMMMMMMMMMMMMMs
+#                sMMMMMMMMMMMMMMMMMMMMMMMMMMm                                             .mMMMMMMMMMMMMMMd`
+#                 yMMMMMMMMMMMMMMMMMMMMMMMMMd+yo`                                          sMMMMMMMMMMMMMd`
+#                 `yMMMMMMMMMMMMMMMMMMMMMMMMMMMd`                                          mMMMMMMMMMMMMd`
+#                   oMMMMMMMMMMMMMMMMMMMMMMNh+-`                                          /MMMMMMMMMMMMy`
+#                    /NMMMMMMMMMMMMMMMMMNh/`                                          .oyyhMMMMMMMMMMNo
+#                     .hMMMMMMMMMMMMMMNy-                                          ./yNMMMMMMMMMMMMMd-
+#                      `/mMMMMMMMMMMMh-                                           :NMMMMMMMMMMMMMMNo`
+#                        .oNMMMMMMMN+`                                       `:oo+dMMMMMMMMMMMMMNy.
+#                          .smMMMMd-                                      ./ymMMMMMMMMMMMMMMMMNy-
+#                            .odMy`                                       -mMMMMMMMMMMMMMMMMms-
+#                              `-`                             `.:+hh:     -mMMMMMMMMMMMMNh/.
+#                                                      ``.-:+shdNMMMMNs.    .hMMMMMMMMmh+-
+#                                                     +yhdmmmmmmmmmmmmmh:    `+osydds:.
+#                                                     `.................`
+#
+#
+#                                      D R A G O N H A C K          L J U B L J A N A
+#
+#                                                       2   0   1   5
+# Author: Tamius Han (xternal7)
+# 
+# 
+# Glavna datoteka | main file
+
+#Jezik: angleški (if stavkovje se zanaša na to)
+LANG=en_US.UTF-8
+#Here we force English over whatever is your locale — some if things depend on that.
+
+# BARVE
+source colors
+
+# Nočemo, da se skript konča s ctrl-c
+# We don't want the fun to end with ctrl-c
+
+function sigint {
+  kill $! -l SIGINT 1>/dev/null 2>/dev/null
+  echo ""
+  trap '' SIGINT
+}
+
+multiplier=1;
+cmdlen=0;
+
+function checkExitStatus {
+  sleep 0.5
+  if [ $1 -eq 0 ] ; then
+    xp=$(( $len * $multiplier * ( ($len + 10) / 25) ))
+    sgloader mod xp $xp
+    increase_ach Really_high_score $xp
+    increase_ach Blaze_it!
+  fi
+  
+  if [ $1 -ne 0 ] ; then
+    if [[ -s $2 ]] ; then     # Če se to zgodi, potem output ni prazen. Torej je prišlo do
+                              # leđit napake (Nekateri programi — tu predvsem mislim na `grep`,
+                              # ki se ob neujemanju konča z 0. Ker neujemanje načeloma ni
+                              # napaka in ker programi ob napaki določene stvari izpišejo tudi
+                              # na STDERR, preverimo tudi STDERR). Zato odbijamo točke.
+                              # 
+                              # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                              #       
+                              # If this happens, then output is not empty. This means there
+                              # was a legit mistake (some programs - for example, `grep` will
+                              # return an exit status different than 0 even if there was no
+                              # error). So you lose the points.
+      increase_ach Doged_a_Bullet
+      reset_ach Blaze_it!
+      if echo "$3" | grep -q tar ; then
+        if grep -q -i "tar --help\|tar --usage" "$2" ; then
+          printf "$Yellow===========================================\n"
+          printf "$Red-all hp$Color_Off for entering invalid tar command\n"
+          printf "Rob failed to defuse the bomb.\n"
+          sgloader set hp 0          
+          gameover &
+          
+          
+          aplay -q ~/.config/punishell/sound/tarfail.wav &
+          sleep 1
+          increase_ach 'Kaboom'
+          # Če smo pošteni, sem za predstavitev zakomentiral tale aplay. Verjetno z dobrim razlogom.
+          # . . . . . . . . . . . . . . 
+          # To be honest, this aplay was commented during the project presentation, probably for a
+          # good reason too.
+          
+          # Reference: https://xkcd.com/1168
+          # sudo poweroff -f
+        fi
+      elif echo "$3" | grep -q "sudo" ; then
+        if grep -q -i "incident will be reported" "$2" ; then
+          printf "$Yellow===========================================\n"
+          printf "$Red-10 hp$Color_Off for being naughty. The incident will be reported to\n"
+          printf "$On_Blue$UWhite"
+          printf "incidents@mlh.io$Color_Off (and Santa is going to be cc'd, too!).\n"
+          printf "Needless to say, go make your own sandwich.\n"
+          printf "$Yellow===========================================$Color_Off\n"
+          
+          # Za tiste, ki se čudijo omembi 'incidents@mlh.io' — dragonhack se je zgodil pod okriljem
+          # MLH. MLH spodbuja, da se vse incidente in kršitve reda posreduje na ta e-mail. 
+          # 
+          #  Fora z božičkom: https://xkcd.com/838/
+          # Fora s sendvičem: 'sudo naredi mi sendvič' je sicer stara kot zemlja, vendar pa se jo
+          # je enkrat dotaklnil tudi Randall: https://xkcd.com/149/
+          # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+          # For those who wonder about the very specific e-mail — dragonhack happened under the MLH
+          # umbrella. MLH encourages people to report any incidents on their events to this e-mail.
+          # 
+          # I'm keeping this e-mail in because I'm not retro-removing a joke, but please don't spam
+          # it. This script doesn't.
+          # 
+          # References included:
+          #     https://xkcd.com/838/ — The Santa thing.
+          #     https://xkcd.com/149/ — Actually the 'sudo make me a sandwich' joke is likely older
+          #                             than the universe, but Randall did it once too.
+          
+          increase_ach 'Naughty'
+        fi
+      elif grep -q -i "permission" "$2" ; then
+        printf "$Red-10 hp$Color_Off for doing stuff you aren't supposed to do\n"
+        if sgloader mod hp 10 ; then
+          printf "$(sgloader get hp) hp remaining\n"
+        fi
+        
+        increase_ach Not_Your_Business
+        increase_ach Nosey_Motherfucker
+      else
+        printf "$Red-20 hp$Color_Off for entering commands incorrectly\n"
+        if sgloader mod hp 20; then        
+          printf "$(sgloader get hp) hp remaining\n"
+        fi
+      fi
+      
+      increase_ach Stayin_Alive!
+    fi
+  elif grep -i -q "command not found" "$2" ; then
+    printf "$Red-20 hp$Color_Off for entering commands incorrectly\n"
+    if sgloader mod hp 20; then        
+          printf "$(sgloader get hp) hp remaining\n"
+    fi
+  fi
+  
+  rm $2
+  
+  return
+}
+
+
+
+function launch_cmd {
+  filename="/tmp/$(date +%s%N)-err"
+  
+  if echo "$1" | egrep -q "cd|su|ssh" ; then
+    $1 2> >(tee $filename)
+    checkExitStatus "$?" "$filename" "$1" 
+  elif [ "$1" == "isof" ] ; then
+    printf "$BRed"
+    printf "is of punishell game$Color_Off\n\n"                    #Is also of polanball
+    printf "Current xp: $Green$(sgloader get xp)$Color_Off\n"
+    printf "Current hp: $Red$(sgloader get hp)$Color_Off\n"
+    printf "\n\n"
+    printf "Highest score (xp): $Green$(sgloader record | awk {'print $1'})$Color_Off (owner: $Cyan$(sgloader record | awk {'print $2'})$Color_Off"
+    if [ "$(whoami)" == "$(sgloader record | awk {'print $2'})" ] ; then
+      printf " - you!"
+    fi
+    printf ")\n"
+  elif [ "$1" == "achievements" ] || [ "$1" == "print-achievements" ] ; then
+    sgloader print-achievements
+  elif [ "$1" == "exit" ] ; then
+    exit 0
+  else  
+    testshell a "$1" 2> >(tee $filename)
+    checkExitStatus "$?" "$filename" "$1" 
+  fi
+}
+
+prompt=1
+
+while(true) ; do
+  
+  
+  printf "$Cyan$USER@$HOSTNAME $Yellow$PWD $Cyan$ $Color_Off"  
+  trap 'sigint' SIGINT
+  if line=$(sgread) ; then
+    trap '' SIGINT
+  else
+    continue
+  fi
+   
+  
+  multiplier=1; 
+  lit_sequence=0;
+  ignore_next=0;
+  lastIndex=0;  
+
+  # Če imamo v eni vrstici več ukazov, ločenih s podpičjem, potem se vsak ukaz
+  # mora izvajati posebej. (Tehnično gledano tega ni treba, vendar pa se v nasprotnem
+  # primeru ukazi 'cd' v takem zaporedju ne bi nujno pravilno izvedli. (Lahko da bi se,
+  # vendar pa punishell v tem primeru ne bi bil zacdjan v pravilno mapo. Ta del kode
+  # tudi skrbi za to, da se množilnik točk poveča z vsakim ukazom, ki je vnešen v eno
+  # vrstico.)
+
+  # If we have multiple commands in separate line (command separator is ';'), then
+  # every command will execute separately. Passing them all forward at the same time
+  # would work, but the 'cd' command wouldn't necessarily execute properly. (They 
+  # probably would, but the shell wouldn't be cd'd to the proper folder. This code
+  # is also responsible for the code multiplier — the more commands you enter in a single
+  # line, the higher the score multiplier gets).
+
+  for (( i=0; i < ${#line}; i++)); do    
+    if [[ $ignore_next -gt 0 ]] ; then
+      ignore_next=$(( $ignore_next - 1 ))
+    fi
+    
+    c=${line:$i:1}
+    
+    if [[ "$c" == '"' ]] || [[ "$c" == "'" ]] ; then
+      if [[ $ignore_next -eq 0 ]] ; then
+        if [[ lit_sequence -eq 0 ]] ; then
+          lit_sequence=1
+        else
+          lit_sequence=0
+        fi
+      fi
+    elif [[ "$c" == '\' ]] ; then
+      if [[ $ignore_next -eq 0 ]] ; then
+        ignore_next=2
+      fi
+    elif [[ "$c" == ";" ]] ; then
+      if [[ $lit_sequence -eq 0 ]] ; then
+        len=$(( $i - $lastIndex ))
+        launch_cmd "${line:$lastIndex:$len}"
+        lastIndex=$(( $i + 1))
+        multiplier=$(( $multiplier + 1 ))
+      fi 
+    fi    
+  done   #endfor
+  len=$(( $i - $lastIndex ))
+  launch_cmd "${line:$lastIndex:$len}"
+  lastIndex=$i
+
+  
+done
+  

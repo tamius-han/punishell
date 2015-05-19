@@ -1,0 +1,10 @@
+1 Kaboom! 0 0 1 bomb.png none Don't_be_a_tit,_buy_a_kit! Fail_to_enter_a_valid_tar_command.
+2 Naughty 0 0 1 naughty.png none No_presents_for_you_this_year. Do_sudo_even_if_you're_not_in_sudoers_file.
+3 Not_Your_Business 0 0 1 stop.png none You_tried_to_do_a_forbidden_thing. Try_to_do_stuff_you_aren't_supposed_to_do.
+4 Nosey_motherfucker 0 0 10 stop.png none Can't_stop_messing_with_stuff_you_arent_allowed_to_mess_with,_right? Try_to_do_stuff_you_aren't_supposed_to_do_10_times.
+5 Doged_a_Bullet 0 0 1 doge.png none Good_thing_this_isn't_suicide_linux.\\n\\n____wow_such_achievement wow_such_achievement_(Fail_to_enter_a_valid_command_once_—_be_glad_you_aren't_on_suicide_linux)
+6 A_Whole_New_Level 0 0 1 default.png none You_levelled_up! Level_up_for_the_first_time.
+7 Stayin_Alive! 0 0 100 default.png alive.wav Stayin_alive 100_commands_and_still_not_dead Type_100_commands_before_losing_the_game.
+8 rekt 0 0 1 default.png none.wav The_Game You_lost_the_game_once.
+9 Blaze_It! 0 0 420 weed.png weed.wav You_typed_420_commands_in_a_row_without_a_single_mistake Type_420_commands_in_a_row_without_a_single_mistake
+10 Really_high_score 0 0 1000000 default.png noone.wav Keep_dem_xp_high. Achieve_1000000_xp_in_a_single_game.
