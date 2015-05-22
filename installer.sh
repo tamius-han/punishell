@@ -184,7 +184,6 @@ echo "PATH=\$PATH:$HOME/.scripts:$HOME/.scripts/punishell" >> $HOME/.bashrc
 echo $extra_rc >> $HOME/.bashrc
 
 echo "PATH=\$PATH:$HOME/.scripts:$HOME/.scripts/punishell" >> $HOME/.profile
-echo $extra_rc >> $HOME/.profile
 
 cp -R config "$HOME/.config/punishell"
 
